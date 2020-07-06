@@ -22,7 +22,7 @@ while True:
             if event.from_user and not event.from_me:
                 if response == '!код 1334' or response == '!код 2134':
                     session.method('messages.send', {'user_id':event.user_id,'message':'Пользователь увидит ваше сообщение!','random_id':0})
-                    plyer.notification.notify(message='Тебе написал человек! Проверь свой ВКонтакте!',app_name='SPAM FILTER by clownWall',app_icon='icon.jpg',title='SPAM FILTER by clownWall', )
+                    plyer.notification.notify(message='Тебе написал человек! Проверь свой ВКонтакте!',app_name='SPAM FILTER by clownWall',title='SPAM FILTER by clownWall', )
                 elif response.find('!код') != -1:
                     session.method('messages.send', {'user_id':event.user_id,'message':'Неправильный код! Попробуйте ещёь','random_id':0})
                 else:
